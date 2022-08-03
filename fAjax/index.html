@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tamar&Rachel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="logIn">
+        <p style="font-size: 100px;margin-left: 100px">welcome</p>
+        <form class="modal-content animate" id="shoppingCartSubmit">
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input id="name1" type="text" placeholder="Enter Username" name="uname" required>
+            <p id="p1"></p>
+            <label for="psw"><b>Password</b></label>
+            <input id="pass1" type="password" placeholder="Enter Password" name="psw" required>
+            <p id="p2"></p>
+            <button type="submit" >Login</button>
+        </div>
+        </form>
+        <a href="#signUp" id="signUpB">signUp</a>
+    </div>
+
+    <div id="signUp" style="display: none;">
+        <form class="modal-content animate" id="signUpToShopping">
+
+            <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input id="nameSignUp" type="text" placeholder="Enter Username" name="uname" required>
+            <p id="p3"></p>
+            <label for="psw"><b>Password</b></label>
+            <input id="passSignUp" type="password" placeholder="Enter Password" name="psw" required>
+            <p id="p4"></p>
+            <label for="mail"><b>Email</b></label>
+            <input id="EmailSignUp" type="text" placeholder="Enter mail" name="mail" required>
+            <p id="p5"></p>
+            <label for="cerditCard"><b>creditCard</b></label>
+            <input id="cerditCard1" type="text" placeholder="Enter cerdit Card" name="cerditCard" required>
+
+        
+            <button type="submit">signUp</button>
+            </div>
+            
+        </form>
+        <button id="logInB">back</button>
+    </div>
+
+    <div id="shoppingCart" style="display: none;">
+        <div id="shopping">
+
+        </div>
+
+       
+        <div id="table">
+           <br>
+            <form id="productsList">
+                <label for="product">Select the product you want to add:</label>
+                <select name="product" id="product" onchange="selectProduct(this)">
+                    <option></option>
+                    <option value="milk">milk</option>
+                    <option value="cheese">cheese</option>
+                    <option value="eggs">eggs</option>
+                    <option value="chocolate">chocolate</option>
+                    <option value="bread">bread</option>
+                </select>
+                <button type="submit" id="submitForm" disabled>  add product ➕ </button>
+              </form><br>
+              <form id="productsList2">
+                <label for="product2">Select the product you want to delete:</label>
+                <select name="product2" id="productDelete" onchange="selectProduct2(this)">
+                    <option style="display: none;"></option>
+                    <option style="display: none;" value="milk">milk</option>
+                    <option style="display: none;" value="cheese">cheese</option>
+                    <option style="display: none;" value="eggs">eggs</option>
+                    <option style="display: none;" value="chocolate">chocolate</option>
+                    <option style="display: none;" value="bread">bread</option>
+                </select>
+                <button type="submit" id="submitFor" disabled>delete product ➖</button>
+              </form>
+            <br>
+              <table id="product_table">
+                <tr>
+                    <td class="td"> weihgt of the product </td>
+                    <td class="td"> price of the product</td>
+                    <td class="td"> amount of products</td>
+                    <td class="td"> pruduct name</td>
+                </tr>
+            </table>
+        </div>
+        <br> 
+        <button id="logOutB">make a reservation 👍</button>
+        <button id="saveB">save ✔</button>
+        <!-- <button id="cancelB">cancel all your changes ↩</button> -->
+        <button id="deleteB">delete all your products ❌</button>
+        <button id="signOutB">signOut</button>
+
+    </div>
+    <script src="./db.js"></script>
+    <script src="./dbApi.js"></script>
+    <script src="./restApi.js"></script>
+    <script src="./fajax.js"></script>    
+    <script src="./script.js"></script>
+
+</body>
+</html>
