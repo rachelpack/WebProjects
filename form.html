@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styleForm.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <form class="grid" action="">
+      <h1 class="ha">טופס הזמנה  </h1>
+        <div class="right">
+            <h2>פרטי המזמין</h2>
+            <br> <br>
+            <label for="name">שם המזמין</label>
+            <br>
+            <input type="text" name="name" placeholder="שם פרטי">
+               
+               
+                <br> <br>
+                <label for="name2">שם משפחה</label>
+                <br>
+                <input type="text" name="name2" placeholder="שם משפחה">
+               
+               
+                <br> <br>
+                <label for="email">כתובת אימייל</label>
+  <br>
+                <input type="email" id="email" name="email"  placeholder="אימייל">
+                
+<br> <br>
+<label for="det">בחר יעד:</label>
+<select id="det" name="det">
+  <option value="france">צרפת</option>
+  <option value="switch">שוייץ</option>
+  <option value="holand">הולנד</option>
+  <option value="holand">בלגיה</option>
+  <option value="holand">דובאי</option>
+  <option value="holand">פולין</option>
+  <option value="holand">ארה"ב</option>
+
+</select>
+
+<br> <br>
+
+
+      <input type="radio" id="over" name="korona" value="over">
+      <br>
+      <label for="over">מחלים</label>
+      <br>
+     
+      <input type="radio" id="serolog" name="korona" value="serolog">
+      <br>
+      <label for="serolog">סרולוגי</label>
+      <br>
+      
+      <input type="radio" id="vaccine" name="korona" value="vaccine">
+      <br>
+      <label for="vaccine">מחוסן  </label>
+     
+      <br> <br>
+             
+              
+</div>
+<div class="middle">
+  <h2>הרכב הנוסעים </h2>
+<br><br>
+<label for="quantity">מספר מבוגרים</label>
+<br>
+  <input type="number" id="quantity" name="quantity" min="0">
+ 
+  <br><br>
+
+  <label for="quantity1">מספר ילדים</label>
+  <br>
+  <input type="number" id="quantity1" name="quantity1" min="0">
+  <br>
+
+  <h3>תאריך יציאה </h3>
+  <input type="date" name="r" placeholder=" תאריך הנסיעה: ">
+  <br>
+
+  <h3>תאריך חזרה </h3>
+  <input type="date" name="r" placeholder=" תאריך הנסיעה: ">
+  <br><br>
+     
+       </div>
+      <div class="submit">
+       
+       <!-- <input type="submit" value="בצע הזמנה"> -->
+      
+   <button type="button" onclick="alert(' הזמנתך התקבלה בהצלחה, תודה שבחרת pack-tour!!')" style="width: 150px; height: 50px;"> 
+  הזמן</button>
+    
+      </div>
+     </form>
+</body>
+</html>
+
+          <!-- <p>אופן התשלום  </p>
+          <input name="tokef" type="text" class="pay" />
+          <span></span>
+         <input name="tokef" type="text" class="pay" />
+
+         <input name="cvv" type="text" class="pay" />
+         
+         <input name="cvv" type="text" class="pay" />
+         <input name="identity" type="text" class="pay" />
+
+         <input name="identity" type="text" class="pay" />
+       </div>  -->

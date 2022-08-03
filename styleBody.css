@@ -1,0 +1,77 @@
+
+.position-fixed{
+    position: fixed;
+  }
+
+
+  .menu {
+    /* position: fixed; */
+   grid-area: menu;
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;
+   /*height: 10%*/}
+
+   .navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:  rgba(255, 255, 255, 90%);
+    border-bottom:2px solid  rgb(49, 191, 199); ;
+     box-shadow: 2px 2px 2px 2px gray;
+        padding: 5px 0;
+  }
+a:hover{
+  color: brown; 
+
+}
+  footer{
+
+  /* margin-tops: 300px; */
+}
+
+h1, h3, h5, h6{
+  margin: 0;
+  font-family: myFont;
+}
+.icons{
+  width: 100%;
+  margin-top: -20px;
+}
+.base{
+  background: rgb(232, 224, 205);
+  height: 400px;
+  padding: 20px;
+  margin-top: -8px;
+  font-family: myFont;
+  font-size: 1rem;
+  display: flex;
+  text-align: right;
+  justify-content: space-around;
+
+}
+    
+ .baseGrop{
+    background: rgb(232, 224, 205);
+ }
+.viewPicture{
+  height: 300px;
+  width: 500px;
+  background-image: url(images//פוטר.png);
+  background-position: cover;
+}
+
+input{
+ background:  rgb(49, 191, 199); 
+ border: none;
+}
+#created{
+width: 15%;
+margin-bottom: 5%;
+}
+
+.color{
+  color:brown;
+  font-size: 25px;
+}

@@ -1,0 +1,54 @@
+.grid{
+    display: grid;
+     
+    grid-template-columns: repeat(12,1fr) ; 
+     grid-template-rows: repeat(12,auto) ;  
+}
+
+@font-face{
+    font-family: myFont;
+src: url(גופנים//FbToccido//FbToccido-Regular.otf);
+  }
+
+.ha{
+    grid-row:  1/2;
+ 
+    grid-column:span 12; 
+    text-align: center;
+    padding: 25px;
+}
+ .right{
+grid-column: 4/6;
+/* text-align:end; */
+font-size: 20px;
+grid-row:2/10 ; 
+/* margin-left:0%; */
+} 
+
+.middle{
+    grid-column:8/10; 
+    /* text-align: start; */
+    font-size: 20px;
+    grid-row: 2/10 ; 
+    /* margin-right:0%;  */
+}
+.submit{
+     grid-column: 6/8; 
+text-align: center;
+ grid-row:12 ; 
+ font-size: 20px;
+
+} 
+body{
+    background:beige ;
+    font-family: myFont;
+}
+
+input{
+    background:  rgb(49, 191, 199); 
+    border: none;
+   }
+   button{
+    background:  rgb(49, 191, 199); 
+    border: none;
+   }

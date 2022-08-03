@@ -1,0 +1,174 @@
+ html{
+      scroll-behavior:  smooth;
+     }
+      @font-face{
+       font-family: myFont;
+src: url(גופנים//FbToccido//FbToccido-Regular.otf);
+     }
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+  margin: 0;
+}
+.menu {
+   /* position: fixed; */
+  grid-area: menu;
+  display: flex; 
+  justify-content: space-around;
+ align-items: center;
+ font-family:  myFont;
+ font-size: 1rem;
+/*height: 10%*/}
+
+.logo { grid-area: logo;
+align-items: right;}
+
+.logologo{
+  height: 70px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo logo logo menu menu menu menu menu menu'
+    'main2 main2 main2 main2 main2 main2 main2 main2 main2'
+    'footer footer footer footer footer footer footer footer footer'
+    ;
+    grid-template-columns: repeat(9, 1fr);
+    /* grid-template-rows: 70px 1200px; */
+  grid-gap: 5px;
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+  height: 5vh;
+}
+
+footer{
+  grid-area: footer;
+}
+
+
+
+.trip1{ grid-area: trip1;
+  font-family: myFont;}
+.trip2{ grid-area: trip2;
+  font-family: myFont;}
+.trip3{ grid-area: trip3;
+  font-family: myFont;}
+.trip4{ grid-area: trip4;
+  font-family: myFont;}
+  .trip5{ grid-area: trip5;
+  font-family: myFont;}
+  .trip6{ grid-area: trip6;
+  font-family: myFont;}
+
+.main2{
+    grid-area: main2;
+    display: grid;
+     margin:5% 20%; 
+      grid-template-areas:
+      'trip1 trip2 trip3'
+      'trip4 trip5 trip6';
+      column-gap: 50px;
+      row-gap: 50px;
+}
+
+.main2 > .trip1, .trip2, .trip3, .trip4, .trip5, .trip6{
+    background-color: rgb(232, 224, 205);
+    box-shadow: 3px 3px 3px 3px gray;  
+  text-align: right;
+  /* padding: 20px 0; */
+  font-size: 1.2rem;
+  /* margin: 70px; */
+  /* padding: 2%; */
+  /* border-radius: 2%; */
+  line-height: 100%;
+
+   border-bottom:4px black ;
+  border-right:4px black ; 
+  stroke-opacity: 50%;
+ 
+
+}
+.grid-container > .logo, nav, header, main, footer{
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  /* padding: 20px 0;*/
+  font-size: 30px; 
+}
+
+.pic{
+background: pink;
+height: 200px;
+width: 100%;
+
+
+}
+
+.wr{
+
+margin-block-end: 4%;
+margin-block-start: 4%;
+margin-left: 6%;
+margin-right: 6%;
+
+}
+
+.map{
+
+}
+.trip1 .trip2, .trip3, .trip4 .trip5 .trip6{
+  display: flex;
+   justify-content: space-around;
+   /* margin: 10px; */
+   flex-direction: column;
+}
+iframe{
+border: none;
+width: 100%;
+margin-top: 2%;
+}
+
+tr{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+
+.padding
+{
+  padding-right: 5%;
+}
+
+
+@media only screen and (max-width: 1500px) {
+ 
+    .main2{
+      
+        grid-template-areas:
+        'trip1 trip2'
+         'trip3 trip4'
+        ' trip5 trip6';
+      
+  }
+
+  
+@media only screen and (max-width: 800px) {
+ 
+  .main2{
+    
+      grid-template-areas:
+      'trip1'
+      'trip2'
+       'trip3'
+      'trip4'
+      'trip5'
+       'trip6';
+    
+}
