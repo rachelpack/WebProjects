@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body onload="startGame()">
+  <audio src="../audio/2.mp3" id="one"></audio>
+  <audio src="../audio/1.mp3" id="two"></audio>
+  <div>
+    <main>
+      <div id="myModal" class="modal">
+        <div class="animate">
+          <span id="span">
+            <div class="end">
+              <img class="clock" src="../img/clock.png" alt="c"></img>
+              <p class="finish-time"></p>
+            </div>
+            <!-- <div class="end"> -->
+              <!-- <img class="win" src="../img/win.png" alt="w"> -->
+              <p class="finish"></p>
+            <!-- </div> -->
+            
+          </span>
+          <button id="button" > ↺ try again </button>
+        </div>
+      </div>
+    <div class="up">
+        <div id="flags" id="time"></div>
+        <div id="timer" id="time"></div>
+      </div>
+    </main>
+    <footer>
+      <button class="level" id="">level 1</button>
+      <button class="level">level 2</button>
+      <button class="level">level 3</button>
+    </footer>
+  </div>
+  <aside>
+    <a class="home" href="./home.html">home</a>
+    <p>number of game you play:</p>
+    <p>number of win:</p>
+    <p>everage of secces:</p>
+    <div class='center'>
+      <a class="awesome" onclick="rul()">the rules</a>
+    </div>
+  </aside>
+  <div id="ruls" style="display: none;">
+    <span onclick="x()" class="close" title="Close Modal">&times;</span>
+    <p>כללים:<br>
+      <br>
+      לוח המשחק הוא לוח מרובע, המחולק למשבצות.<br>
+      ממדיו של הלוח אינם קבועים ומשפיעים על מידת הקושי של המשחק.<br>
+      בלוח מפוזרים "מוקשים" בלתי נראים במיקומים אקראיים עם הלחיצה הראשונה על הלוח.<br>
+      הלוח מתחלק ל-2 סוגי משבצות: משבצות עם מוקשים ומשבצות ללא מוקשים<br>
+      - משבצות ללא מוקשים מתחלקות גם הן ל-2 סוגים: משבצות עם מספר ובלי מספר.<br>
+      כל משבצת בה אין מוקש תכיל מספר האומר כמה מוקשים יש סביבו<br>
+      , . מטרת המשחק היא לחשוף את כל המשבצות נטולות המוקשים בפרק זמן קצר ככל האפשר<br>
+      תוך כדי שימוש בשיטת האלימינציה ובלוגיקה פשוטה,<br>
+      אם כי לעיתים אין דרך לגלות ללא ניחוש.<br>
+      כאשר השחקן לוחץ על משבצת כלשהי, המשבצת נחשפת. אם יש במשבצת מוקש, המשחק נגמר. <br>
+      אם השחקן יודע שבמשבצת כלשהי יש מוקש, באפשרותו לסמן אותו בעזרת לחיצה על כפתור העכבר הימני.<br>
+    </p>
+  </div>
+  <script src="../script/script.js"></script>
+</body>
+
+</html>

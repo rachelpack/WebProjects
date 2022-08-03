@@ -1,0 +1,351 @@
+#game{
+  /* margin:50px 450px; */
+  height: 500px!important;
+  width:  500px!important;
+ margin-left:30px;
+  
+}
+.end{
+  /* margin-top: 80px; */
+  display: flex;
+}
+
+@font-face{
+   font-family:myFont;
+   src:url(../COOPBL.TTF);
+}
+ *{
+   font-family: myFont,Arial, Helvetica, sans-serif;
+  
+}
+.td{
+  height: 50px!important;
+  width: 50px!important;
+ 
+}
+body{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(6,auto);
+   background-color:rgba(80, 80, 80, 0.425);
+   /* height: 100vh; */
+   padding-bottom: 150px;
+   padding-top: 150px;
+
+   /* margin: 100px; */
+}
+.level{
+ margin: 2px;
+ color:red;
+ width: 150px;
+ height: 70px;
+ background-color: gray;
+ border: none;
+ font-size: 20px;
+ 
+}
+span img{
+  width: 70px;
+ display: flex;
+ align-content: space-between;
+ padding-top: 30px;
+}
+#flags{
+  padding: 20px;
+  /* background-color: #dd1c56; */
+  /* color:white; */
+  font-size: 20px;
+  font-family: myFont,Arial, Helvetica, sans-serif;
+  grid-column:2/3;
+  grid-row: 1/2;
+  width: 70px;
+
+}
+.up{
+  display: flex;
+  justify-content: space-around;
+}
+#timer{
+  padding: 20px;
+  /* background-color: #dd1c56; */
+  /* color:white; */
+  font-size: 20px;
+  font-family: myFont,Arial, Helvetica, sans-serif;
+  grid-column:2/3;
+  grid-row: 1/2;
+  width: 70px;
+}
+/* span>img{
+   display: flex;
+  flex-direction: row;
+} */
+#win{
+  float:right;
+}
+ button:hover {
+ opacity: 0.8;
+}
+#span{
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(239, 239, 243);
+  margin-left:750px;
+  margin-top:150px;
+ 
+}
+#button{
+background-color: rgb(56, 51, 49);
+  color:white;
+  border-radius: 15px;
+  width: 300px;
+   height: 70px; 
+  margin-top: 10px;
+  font-size: 25px;
+  margin-left:750px;
+}
+body>div{
+background-color: rgba(109, 104, 104, 0.425);
+grid-column:2/3;
+grid-row: 2/6;
+margin-bottom: 20px;
+
+}
+aside{
+  grid-column:1/2;
+  grid-row: 5/6;
+  padding: 30px;
+}
+
+aside>p,aside>a{
+  margin:30px;;
+}
+/* iframe{
+  grid-column:3/4;
+  grid-row: 2/5;
+  height: 400px;
+  width: 400;
+} */
+footer{
+ margin-left:20px ;
+margin-top: 30px;
+margin-bottom: 30px; 
+display: flex;
+justify-content: space-around;
+} 
+#ruls{
+  background-color: rosybrown;
+  width: 400px;
+  height: 450px;
+  grid-column:1/2;
+  grid-row: 5/6;
+  direction:rtl;
+  padding:15px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  grid-column:1/2;
+  grid-row: 5/6;
+
+}
+a:hover,a:focus{
+  color: rosybrown;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* The Modal (background) */
+#myModal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; 
+ padding-top: 100px; /* Location of the box */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */ /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.b {
+ 
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: green;;
+ /* margin: auto; */
+ /* padding: 0; */
+ /* border: 1px solid #888; */
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  height: 150px;
+  width: 100px;
+  display:flex;
+}
+.animate {
+ -webkit-animation: animatezoom 0.6s;
+ animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+ from {-webkit-transform: scale(0)} 
+ to {-webkit-transform: scale(1)}
+}
+ 
+@keyframes animatezoom {
+ from {transform: scale(0)} 
+ to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+ span.psw {
+    display: block;
+    float: none;
+ }
+ .cancelbtn {
+    width: 100%;
+ }
+}
+
+.center {
+      
+  margin: 0 auto;
+  
+}
+.home{
+  text-decoration: none;
+  font-size: 25px;
+}
+.awesome {
+/*   
+  font-family: futura;
+  font-style: italic; */
+  
+  /* width:100%; */
+  
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  
+  color:#313131;
+  font-size:45px;
+  /* font-weight: bold; */
+  /* position: absolute; */
+  -webkit-animation: colorchange 20s infinite alternate;
+
+}
+
+.center{
+  grid-column:span 1;
+  grid-row: 1/2;
+  margin-left: 25px;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    
+    color: blue;
+  }
+  
+  10% {
+    
+    color: #8e44ad;
+  }
+  
+  20% {
+    
+    color: #1abc9c;
+  }
+  
+  30% {
+    
+    color: #d35400;
+  }
+  
+  40% {
+    
+    color: blue;
+  }
+  
+  50% {
+    
+    color: #34495e;
+  }
+  
+  60% {
+    
+    color: blue;
+  }
+  
+  70% {
+    
+    color: #2980b9;
+  }
+  80% {
+ 
+    color: #f1c40f;
+  }
+  
+  90% {
+ 
+    color: #2980b9;
+  }
+  
+  100% {
+    
+    color: pink;
+  }
+}
+
+.finish {
+  display: block;
+  font-size:40px;
+  margin-left: 60px;
+  -webkit-animation: finish 0.5s infinite alternate;
+}
+
+@keyframes finish {
+  25% {color: red;
+    text-shadow:4px 2px 2px tomato;
+  margin-left:60px;}
+  50% {color: blue;
+    text-shadow:4px 2px 2px lightblue;
+  margin-left:62px;}
+  70%{color:#c44e80;
+    text-shadow:4px 2px 2px pink;
+    margin-left:60px;}
+  100% {color: green;
+    text-shadow:4px 2px 2px rgb(101, 197, 101);
+    margin-left:62px;}
+  
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+} 
+.finish-time{
+  font-size:22px;
+  margin-left: 30px;
+}
